@@ -22,7 +22,7 @@ def best_first_search(graph, start, goal):
                 path.insert(0, current_node)
                 current_node = came_from[current_node]
             return path
-
+        #
         # Exploramos los nodos vecinos del nodo actual
         for next_node, cost in graph[current_node].items():
             new_cost = current_cost + cost
